@@ -79,7 +79,7 @@ export abstract class EventHandler {
         return;
       }
 
-      core.debug(tagsList[0].name);
+      core.info(tagsList[0].name);
 
       return SemanticVersion.fromString(tagsList[0].name);
     } catch (e) {
