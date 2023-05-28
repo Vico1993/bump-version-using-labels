@@ -49,7 +49,7 @@ export default class PullRequestHandler extends EventHandler {
 
     let referenceVersion = await this.getReferenceVersion();
 
-    console.log(localVersion);
+    core.debug(localVersion.raw);
 
     // Retrieving the reference version failed
     if (referenceVersion === undefined) {
